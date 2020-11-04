@@ -51,3 +51,60 @@
 \end{table}
 
 \end{document}
+
+\begin{figure}[h!]
+
+    \hfill
+    \begin{minipage}[t]{.45\textwidth}
+        \begin{center}
+        %\renewcommand*\theadfont{\bfseries}
+        \renewcommand*\theadalign{c}
+            \begin{table}[h]
+    %%%% centrar
+            \begin{minipage}[c]{0.5\textwidth}
+                \begin{tabular}
+                  %\begin{center}
+%%%% reajustar a un ancho 90%
+                \resizebox{0.5\textwidth}{!}{
+
+                DATOS DE LA TABLA
+               }
+                \end{tabular}
+
+%\caption[Radial 1, ángulo 0 grados respecto al transmisor]{Radial 1, ángulo 0 grados respecto al transmisor}
+    \end{minipage}
+
+    \end{table}
+    \end{center}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{.45\textwidth}
+
+\renewcommand*\theadfont{\bfseries}
+\renewcommand*\theadalign{c}
+\begin{table}[h]
+\begin{minipage}[c]{0.5\columnwidth}%
+%%%% centrar
+\begin{center}
+%%%% reajustar a un ancho 90%
+\resizebox{0.9\textwidth}{!}{
+
+\begin{tabular}{|c|c|c|c|}
+
+DATOS DE LA TABLA
+
+\end{tabular}
+}
+\end{center}
+
+\caption[Radial 1, ángulo 90 grados respecto al transmisor]{Radial 1, ángulo 90 grados respecto al transmisor}
+
+\end{minipage}
+\hfill
+\end{table}
+\end{figure}
+}
+
+
+\end{document}
