@@ -1,0 +1,53 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Tabla}
+\author{zamoramirez.iv Zamora}
+\date{November 2020}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{c|c|c|c|c|c}
+    \hline
+          Paso & A & B & C & D & E \\ 
+          \hline
+          Paso & A & B & C & D & E \\
+    \end{tabular}
+    \caption{Caption}
+    \label{tab:my_label}
+\end{table}
+
+
+\begin{table} [h!]
+	\centering
+	%s\caption{Secuencia de paso simple (izquierda), se activa solo una bobina. Secuencia paso doble (derecha) se activan dos bobinas a la vez.} 
+	
+	\label{tabla:pasoDobleySimple}
+		\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
+			\hline 
+			%\multicolumn{6}{|c|}{Paso simple}
+			%\multicolumn{6}{|c|}{Paso doble} 
+			%Paso doble derecha
+			paso simple & 
+			\\ 
+			\hline 
+			 & A  &  B & C  & D & imagen & & A & B & C & D & imagen \\ 
+			\hline 
+			PASO 1  & 1 & 1 & 0 & 0 & imagen 1 & PASO 2 & 0 & 1 & 1 & 0 & Imagen 1a\\ 
+			\hline 
+			PASO 2 & 0 & 0 & 1 & 1 & imagen 2 & PASO 4 & 1 & 0 & 0 & 1 & imagen 2a \\ 
+			\hline
+			PASO 3 & 0 & 0 & 1 & 1 & imagen 3 & PASO 4 & 1 & 0 & 0 & 1 & imagen 3a \\ 
+			\hline
+			PASO 4 & 0 & 0 & 1 & 1 & imagen 4 & PASO 4 & 1 & 0 & 0 & 1 & imagen 4a \\ 
+			\hline
+		\end{tabular} 
+\end{table}
+
+\end{document}
